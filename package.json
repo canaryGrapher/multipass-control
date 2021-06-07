@@ -1,0 +1,23 @@
+{
+  "name": "multipass-control",
+  "version": "1.0.0",
+  "description": "A package to control multipass from within your NodeJS application like launching an image, stopping or deleting images. This package requires Multipass to be installed on your system.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node testModule.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Mulitpass",
+    "Linux",
+    "VM",
+    "Windows",
+    "Canonical"
+  ],
+  "author": {
+    "name": "Yash Aryan",
+    "email": "hello@yasharyan.com",
+    "url": "https://yasharyan.com"
+  },
+  "license": "MIT"
+}
