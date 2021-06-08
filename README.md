@@ -9,7 +9,7 @@ A package to control Multipass VM manager from within your NodeJS application fo
 
 
 Works on: <br />
-![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![](https://img.shields.io/badge/Apple-white?style=for-the-badge&logo=apple&logoColor=black)
+![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![](https://img.shields.io/badge/Mac_OS-white?style=for-the-badge&logo=apple&logoColor=black)
 
 ## Installation
 To install the package:
