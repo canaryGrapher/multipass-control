@@ -1,6 +1,6 @@
 {
   "name": "multipass-control",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A package to control multipass from within your NodeJS application like launching an image, stopping or deleting images. This package requires Multipass to be installed on your system.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/canaryGrapher/multipass-control.git"
   },
-  "homepage": "https://github.com/canaryGrapher/multipass-control",
+  "homepage": "https://github.com/canaryGrapher/multipass-control/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/canaryGrapher/multipass-control/issues"
   },
@@ -19,7 +19,7 @@
     "Mulitpass",
     "Linux",
     "VM",
-    "Windows",
+    "Ubuntu",
     "Canonical"
   ],
   "author": {

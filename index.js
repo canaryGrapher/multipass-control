@@ -154,7 +154,7 @@ const launchImage = async (imageObject) => {
       ? {
           successful: true,
           error: null,
-          output: command_output.stdout.toString().trim(),
+          output: (command_output.stdout.toString().trim().split('\r')).slice(-1).pop(),
         }
       : {
           successful: false,
@@ -187,4 +187,4 @@ module.exports = {
 // console.log("stderr: ", command_output.stderr.toString());
 // console.log("status: ", command_output.status.toString());
 // console.log("signal: ", command_output.signal);
-// console.log("stdout:  ", command_output.stdout.toString());
+// console.log("stdout:  ", command_output.stdout.toString());s
