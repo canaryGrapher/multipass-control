@@ -118,7 +118,6 @@ const purgeImages = async () => {
     ? {
         successful: true,
         error: null,
-        output: command_output.stdout.toString().trim(),
       }
     : {
         successful: false,
@@ -127,17 +126,6 @@ const purgeImages = async () => {
 };
 
 const launchImage = async (imageObject) => {
-  //input format
-  /*
-    {
-      image: ,
-      name: ,
-      cpu: ,
-      disk: ,
-      memory: ,
-
-    }
-  */
   const { image, name, cpu, disk, memory } = imageObject;
   if (image) {
     let command_argument = [`multipass launch ${image}`];
@@ -154,7 +142,12 @@ const launchImage = async (imageObject) => {
       ? {
           successful: true,
           error: null,
-          output: (command_output.stdout.toString().trim().split('\r')).slice(-1).pop(),
+          output: command_output.stdout
+            .toString()
+            .trim()
+            .split("\r")
+            .slice(-1)
+            .pop(),
         }
       : {
           successful: false,
