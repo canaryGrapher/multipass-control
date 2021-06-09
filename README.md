@@ -7,6 +7,8 @@
 ## What is it?
 A package to control Multipass VM manager from within your NodeJS application for controls like launching, stopping or deleting Ubuntu images. This package requires an installation of [Multipass](https://multipass.run/) on your system.
 
+Made with: <br />
+![](https://img.shields.io/badge/Node.js-black?style=for-the-badge&logo=javascript&logoColor=green)
 
 Works on: <br />
 ![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![](https://img.shields.io/badge/Mac_OS-white?style=for-the-badge&logo=apple&logoColor=black)
@@ -449,3 +451,21 @@ const main = async () => {
     
 </details>
 
+# Contributing
+I am working on making this package more robust and fast. If you have ideas on how can that be done, create an issue as a feature request and I will get on it as soon as possible.
+
+# Error reporting
+If you encounter an error, please create a new [issue](https://github.com/canaryGrapher/multipass-control/issues/new) along with:
+- Steps to reproduce
+- Error log (if available)
+
+## License
+
+[![MIT license](https://img.shields.io/badge/License-MIT-red.svg)](https://lbesson.mit-license.org/)
+
+You can do whatever you want as long as you include the original copyright and license notice in any copy of the software/source. The work is provided "as is". You may not hold the author liable. 
+
+## Mentions
+
+![](https://img.shields.io/badge/Canonical-orange?style=for-the-badge&logo=canonical&logoColor=white) <br />
+A shoutout to the [Canonical](https://github.com/canonical) team for creating such an amazing software.
