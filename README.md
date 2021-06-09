@@ -238,6 +238,28 @@ const main = async () => {
 
 ```
 
+<details>
+    <summary>Click here to see sample output</summary>
+    
+        {
+          "errors": [],
+          "info": {
+            "flattering-racoons": {
+              "disks": { "sda1": { "total": "104071168", "used": "104071168" } },
+              "image_hash": "db3a6130f46f8d84adb792a95081671a14d8b90c6ddda7b3e25a1d7d4c0e98b4",
+              "image_release": "Core 16",
+              "ipv4": ["N/A"],
+              "load": [0, 0, 0],
+              "memory": { "total": 511766528, "used": 40534016 },
+              "mounts": {},
+              "release": "Core 16",
+              "state": "Running"
+            }
+          }
+        }
+    
+</details>
+
 ### Start instances
 This function will start the instance provided as the argument.
 ```js
@@ -249,6 +271,17 @@ const main = async () => {
 }
 
 ```
+
+
+<details>
+    <summary>Click here to see sample output</summary>
+
+        {
+          "successful": true,
+          "error": null
+        }
+    
+</details>
 
 ### Stop instances
 This function will stop the instance provided as the argument.
@@ -262,6 +295,16 @@ const main = async () => {
 
 ```
 
+<details>
+    <summary>Click here to see sample output</summary>
+    
+        {
+          "successful": true,
+          "error": null
+        }
+    
+</details>
+
 ### Restart instances
 This function will restart the instance provided as the argument.
 ```js
@@ -273,6 +316,16 @@ const main = async () => {
 }
 
 ```
+
+<details>
+    <summary>Click here to see sample output</summary>
+
+    {
+      "successful": true,
+      "error": null
+    }
+    
+</details>
 
 ###  Suspend instances
 This function will suspend the instance provided as the argument.
@@ -286,6 +339,16 @@ const main = async () => {
 
 ```
 
+<details>
+    <summary>Click here to see sample output</summary>
+
+        {
+          "successful": true,
+          "error": null
+        }
+    
+</details>
+
 ### Delete instances
 This function will delete the instance provided as the argument.
 ```js
@@ -298,6 +361,16 @@ const main = async () => {
 
 ```
 
+<details>
+    <summary>Click here to see sample output</summary>
+   
+        {
+          "successful": true,
+          "error": null
+        }
+    
+</details>
+
 ### Recover instances
 This function will recover the deleted instance provided as the argument.
 ```js
@@ -309,6 +382,16 @@ const main = async () => {
 }
 
 ```
+
+<details>
+    <summary>Click here to see sample output</summary>
+
+        {
+          "successful": true,
+          "error": null
+        }
+
+</details>
 
 ### Execute command on instances
 This function will execute the command on the instance provided as the argument.
@@ -324,6 +407,17 @@ const main = async () => {
 }
 
 ```
+<details>
+    <summary>Click here to see sample output</summary>
+    
+        {
+          "successful": true,
+          "error": null,
+          "output": "/home/ubuntu"
+        }
+    
+</details>
+
 The function takes `name` and `cmd` as a necessary object property, however you can customize your instance by providing other properties as well. These are all the properties the object takes:
 
 | Property Name | Required | Description |
@@ -331,6 +425,7 @@ The function takes `name` and `cmd` as a necessary object property, however you 
 | `name` | yes | The name of the instance you want to execute the command on |
 | `cmd` | yes | The command you want to execute on the instance |
 
+Keep in mind that all commands are run with respect to `/home/ubuntu` directory.
 
 ### Purge deleted instances
 This function will remove all deleted instances from your system permanently
@@ -343,4 +438,14 @@ const main = async () => {
 }
 
 ```
+
+<details>
+    <summary>Click here to see sample output</summary>
+
+    {
+      "successful": true,
+      "error": null
+    }
+    
+</details>
 
